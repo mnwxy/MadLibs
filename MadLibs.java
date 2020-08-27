@@ -16,6 +16,7 @@ public class MadLibs {
 		// Read the story from that file and write it to System.out, but replacing each instance of
 		// <<NOUN>>, <<VERB>>, etc. with a randomly chosen word from the corresponding list.
 		System.out.println("hello");
+		System.out.println("nerd");
 
 	}
 
