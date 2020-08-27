@@ -9,13 +9,12 @@ public class MadLibs {
 		ArrayList<String> verbs = new ArrayList<String>();
 		ArrayList<String> adj = new ArrayList<String>();
 		ArrayList<String> adv = new ArrayList<String>();
-		
 		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
-		
+
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
-		
+
 		//3. Read an adjectives.txt file and store its list of adjectives into an arraylist.
-		
+
 		//4. Read an adverbs.txt file and store its list of adverbs into an arraylist.
 
 		//5. Prompt user for the name of a file containing a MadLibs story.
