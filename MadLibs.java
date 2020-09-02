@@ -51,7 +51,6 @@ public class MadLibs {
 		while (reader.hasNextLine())
 		{
 			String line = reader.nextLine();
-<<<<<<< HEAD
 			String word = "";
 			int num = 0;
 			while (line.substring(num, num+1) != null) {
@@ -65,9 +64,7 @@ public class MadLibs {
 				}
 				num++;
 			}
-=======
 			adv.add(line);
->>>>>>> e755812d6735f1b1722c82d2fa4955c33feecd73
 		}
 			
 		
