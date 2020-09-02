@@ -27,18 +27,7 @@ public class MadLibs {
 		Scanner reader = new Scanner(words);
 		while (reader.hasNextLine()) {
 			String line = reader.nextLine();
-			String word = "";
-			int num = 0;
-			while (line.substring(num, num+1) != null) {
-				if (!line.substring(num,num+1).equals(" ")) {
-					word += line.substring(num,num+1);
-				}
-				else {
-					adv.add(word);
-					word = "";
-				}
-				num++;
-			}
+			adv.add(line);
 		}
 			
 		
