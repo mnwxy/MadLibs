@@ -1,15 +1,25 @@
-import java.util.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 public class MadLibs {
 
 	public static void main(String[] args) {
 		//0. Give variable names for each of the arraylists below and create Madlibs stories.
-		
+
 		ArrayList<String> nouns = new ArrayList<String>();
 		ArrayList<String> verbs = new ArrayList<String>();
 		ArrayList<String> adj = new ArrayList<String>();
 		ArrayList<String> adv = new ArrayList<String>();
 		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
+		//line breaks will split up the nouns.txt files
+		//we are using scanner
+		File nounsFile = new File("nouns.txt");
+		Scanner nounsFileReader = new Scanner(nounsFile);
+		while(nounsFileReader.hasNextLine())
+		{
+			//String 
+		}
 
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
 
