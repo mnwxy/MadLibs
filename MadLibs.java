@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MadLibs {
@@ -14,13 +15,7 @@ public class MadLibs {
 		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
 		//line breaks will split up the nouns.txt files
 		//we are using scanner
-		File nounsFile = new File("nouns.txt");
-		Scanner nounsFileReader = new Scanner(nounsFile);
-		while(nounsFileReader.hasNextLine())
-		{
-			String lineOfNouns = nounsFileReader.nextLine();
-
-		}
+		ConvertNewlineDelimitedTextFileToArrayList("nouns.txt", nouns);
 
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
 
@@ -34,6 +29,22 @@ public class MadLibs {
 
 	}
 
-	public void ConvertNewlineDelimitedTextFileToArrayList(String filename, ArrayList<String>)
+	public static void ConvertNewlineDelimitedTextFileToArrayList(String filename, ArrayList<String> arrayList)
+	{
+		try{
+			File nounsFile = new File(filename);
+			Scanner nounsFileReader = new Scanner(nounsFile);
+			while(nounsFileReader.hasNextLine())
+			{
+				String nextNoun = nounsFileReader.nextLine();
+				arrayList.add(nextNoun);
+			}
+			nounsFileReader.close();
+		}
+		catch(FileNotFoundException e)
+		{
+			System.out.println("oof");
+		}
+	}
 
 }
