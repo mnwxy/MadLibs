@@ -9,6 +9,7 @@ public class MadLibs {
 
 	public static void main(String[] args) throws FileNotFoundException
 	{
+
 		ArrayList < String > nouns = new ArrayList < String > ();
 		ArrayList < String > verbs = new ArrayList < String > ();
 		ArrayList < String > adj = new ArrayList < String > ();
@@ -16,14 +17,13 @@ public class MadLibs {
 		
 		Scanner kbADJ = new Scanner(System.in);
 		System.out.print ( "Adjectives" );
-		String fileName = kbADJ.next );
-		File fileADJ = new File ( fileNameaADJ );
-		Scanner readerADJ = new Scanner ( fileADJ );
-		while ( readerADJ.hasNextLine() )
-		{
-			String line = readerADJ.nextLine();
+		String fileNameADJ = kbADJ.next();
+		File storyADJ = new File (fileNameADJ );
+		Scanner reader = new Scanner(storyADJ);
+		while (reader.hasNextLine()) {
+			String line = reader.nextLine();
 			adv.add(line);
 		}
-		readerADJ.close();
+		reader.close();
 	}
 }
