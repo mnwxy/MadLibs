@@ -19,6 +19,7 @@ public class MadLibs {
 		while(nounsFileReader.hasNextLine())
 		{
 			String lineOfNouns = nounsFileReader.nextLine();
+
 		}
 
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
@@ -32,5 +33,7 @@ public class MadLibs {
 		// <<NOUN>>, <<VERB>>, etc. with a randomly chosen word from the corresponding list.
 
 	}
+
+	public void ConvertNewlineDelimitedTextFileToArrayList(String filename, ArrayList<String>)
 
 }
