@@ -29,7 +29,6 @@ public class MadLibs {
 			String line = reader.nextLine();
 			adv.add(line);
 		}
-		Joe;
 			
 		
 
