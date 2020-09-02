@@ -18,7 +18,7 @@ public class MadLibs {
 		Scanner nounsFileReader = new Scanner(nounsFile);
 		while(nounsFileReader.hasNextLine())
 		{
-			//String 
+			String lineOfNouns = nounsFileReader.nextLine();
 		}
 
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
