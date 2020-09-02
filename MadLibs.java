@@ -1,9 +1,4 @@
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.*;
-
 
 public class MadLibs {
 
@@ -26,4 +21,5 @@ public class MadLibs {
 		}
 		reader.close();
 	}
+
 }
